@@ -12,7 +12,7 @@
 from . import * 
 from . import _phone_, _2vfa_, _verif_, _code_, _logged_
 
-async def pika_login(_PiKa_):
+async def login_assistant(_PiKa_):
     _PikaBot_ = await TelegramClient(
         "PikaBot",
         Var.APP_ID,
