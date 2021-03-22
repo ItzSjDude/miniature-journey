@@ -1,5 +1,5 @@
-from distutils.core import setup
-setup(
+import setuptools
+setuptools.setup(
   name = 'PikaBotTg',
   packages = ['PikaBotTg'],
   version = '0.01',
