@@ -20,8 +20,8 @@ jobs:
         pip install setuptools wheel twine
     - name: Build and publish
       env:
-        TWINE_USERNAME: ${{ ItzSjDude }}
-        TWINE_PASSWORD: ${{ MFH,z.$DCm6Amz; }}
+        TWINE_USERNAME: ${{ secrets.ItzSjDude}}
+        TWINE_PASSWORD: ${{ secrets.MFH,z.$DCm6Amz; }}
       run: |
         python setup.py sdist bdist_wheel
         twine upload dist/*
